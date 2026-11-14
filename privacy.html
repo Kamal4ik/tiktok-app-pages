@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - CrossPost Bot</title>
-    <link rel="icon" type="image/png" href="image.jpg">
+    <title>Privacy Policy - CrossyBot</title>
+    <link rel="icon" type="image/jpeg" href="image.jpg">
     <style>
         :root {
             --bg-color: #0f172a;
@@ -51,6 +51,9 @@
             font-size: 1.25rem;
             color: var(--text-primary);
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .logo span { color: var(--tiktok-pink); }
@@ -106,12 +109,16 @@
             font-size: 0.98rem;
         }
 
-        ul {
-            padding-left: 1.5rem;
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+
+        a.ext-link {
+            color: #60a5fa;
+            text-decoration: none;
         }
 
-        li {
-            margin-bottom: 0.5rem;
+        a.ext-link:hover {
+            text-decoration: underline;
         }
 
         footer {
@@ -138,7 +145,7 @@
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="image.jpg" alt="Logo" style="width: 28px; height: 28px; border-radius: 6px; vertical-align: middle;">
+                <img src="image.jpg" alt="Logo" style="width: 28px; height: 28px; border-radius: 6px;">
                 Crossy<span>Bot</span>
             </a>
             <nav>
@@ -152,45 +159,49 @@
     <main>
         <div class="doc-card">
             <h1>Privacy Policy</h1>
-            <div class="updated-date">Last updated: October 19, 2026</div>
+            <div class="updated-date">Last updated: November 14, 2026</div>
 
             <h2>1. Overview</h2>
-            <p>This Privacy Policy explains how <strong>CrossPost Bot</strong> ("we", "our", or "us") processes user data when integrating Telegram interface with TikTok services via official TikTok Content Posting APIs.</p>
+            <p>This Privacy Policy explains how <strong>CrossyBot</strong> ("we", "our", or "us") collects, uses, and protects user data when connecting Telegram with supported social media platforms (including TikTok, YouTube, Instagram, and others) via their official APIs.</p>
 
             <h2>2. Information We Access</h2>
-            <p>We believe in strict data minimization. We only request permissions necessary to execute core user-requested functionalities:</p>
+            <p>We follow strict data minimization principles and only request permissions required to publish content on your behalf:</p>
             <ul>
-                <li><strong>TikTok OAuth Access Tokens:</strong> Granted securely via official TikTok login to authenticate video uploads on your behalf.</li>
-                <li><strong>Basic Profile Identifiers:</strong> Anonymous OpenID provided by TikTok API to associate authorized sessions.</li>
-                <li><strong>Media Files:</strong> Video files temporarily processed during upload requests from Telegram.</li>
+                <li><strong>OAuth Access & Refresh Tokens:</strong> Granted securely via official platform authorization flows (TikTok OAuth, Google/YouTube OAuth, Meta/Instagram Graph API) to authenticate media uploads without accessing your passwords.</li>
+                <li><strong>Basic Account Identifiers:</strong> Platform-specific user IDs (such as OpenID or Channel/Account ID) and display names used solely to identify connected accounts within the Telegram bot interface.</li>
+                <li><strong>Media & Metadata:</strong> Video files, titles, captions, and privacy settings submitted by you in Telegram for cross-platform distribution.</li>
             </ul>
 
             <h2>3. Data Storage & Retention</h2>
-            <p>We do not store passwords, account credentials, or uploaded video content on long-term databases:</p>
+            <p>We do not sell, rent, or store personal user profiles or media archives on external databases:</p>
             <ul>
-                <li><strong>Temporary Processing:</strong> Media files submitted for uploading are held temporarily during transmission and deleted immediately after API confirmation.</li>
-                <li><strong>Token Protection:</strong> OAuth access tokens are stored using encrypted environment configurations solely to maintain API authorization.</li>
+                <li><strong>Temporary Media Processing:</strong> Video files sent to the bot are cached temporarily during API transmission and deleted immediately once publishing completes or fails.</li>
+                <li><strong>Token Security:</strong> OAuth tokens are stored locally in restricted environment configurations strictly to maintain authorized API sessions.</li>
             </ul>
 
             <h2>4. Third-Party API Services</h2>
-            <p>Our service interacts directly with official third-party services:</p>
+            <p>CrossyBot interacts directly with official third-party APIs. Your data transmitted through these integrations is also subject to each provider's respective privacy policy:</p>
             <ul>
-                <li><strong>TikTok Open API:</strong> Subject to <a href="https://www.tiktok.com/legal/privacy-policy" style="color: #60a5fa;" target="_blank">TikTok Privacy Policy</a>.</li>
-                <li><strong>Telegram Bot API:</strong> Subject to Telegram Terms and Privacy Guidelines.</li>
+                <li><strong>TikTok Open API:</strong> Governed by the <a href="https://www.tiktok.com/legal/privacy-policy" class="ext-link" target="_blank">TikTok Privacy Policy</a>.</li>
+                <li><strong>YouTube API Services:</strong> Governed by the <a href="https://policies.google.com/privacy" class="ext-link" target="_blank">Google Privacy Policy</a>.</li>
+                <li><strong>Instagram Graph API:</strong> Governed by the <a href="https://privacycenter.instagram.com/policy" class="ext-link" target="_blank">Meta Privacy Policy</a>.</li>
+                <li><strong>Telegram Bot API:</strong> Governed by the <a href="https://telegram.org/privacy" class="ext-link" target="_blank">Telegram Privacy Policy</a>.</li>
             </ul>
 
-            <h2>5. Data Revocation & Deletion Requests</h2>
-            <p>Users maintain full control over account access at any time:</p>
+            <h2>5. Data Revocation & Deletion</h2>
+            <p>You retain complete control over your connected accounts and may revoke access at any time:</p>
             <ul>
-                <li>You can revoke our access token directly in your TikTok account settings under <em>Security & Permissions &rarr; Authorized Apps</em>.</li>
-                <li>Upon access revocation, all associated session data is invalidated permanently.</li>
+                <li><strong>TikTok:</strong> Settings and privacy &rarr; Security & permissions &rarr; Manage app permissions.</li>
+                <li><strong>YouTube / Google:</strong> <a href="https://myaccount.google.com/permissions" class="ext-link" target="_blank">Google Account Security Settings</a> &rarr; Third-party apps with account access.</li>
+                <li><strong>Instagram:</strong> Settings &rarr; Apps and websites &rarr; Active apps and websites.</li>
             </ul>
+            <p>Once access is revoked on any platform, all associated tokens become invalid and cannot be used further.</p>
 
             <h2>6. Children's Privacy</h2>
-            <p>Our service does not knowingly collect or solicit personal information from individuals under the age of 13 (or local legal minimum age).</p>
+            <p>CrossyBot is not intended for use by individuals under the age of 13 (or the minimum legal age required in your jurisdiction), and we do not knowingly collect data from minors.</p>
 
             <h2>7. Contact</h2>
-            <p>For questions or data deletion queries regarding this policy, please open an issue in the official GitHub project repository.</p>
+            <p>For questions, security concerns, or data deletion inquiries, please open an issue in the official GitHub repository for this project.</p>
         </div>
     </main>
 
@@ -200,7 +211,7 @@
             <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
         </div>
-        <p>&copy; 2026 CrossPost Bot. All rights reserved.</p>
+        <p>&copy; 2026 CrossyBot. All rights reserved.</p>
     </footer>
 
 </body>
