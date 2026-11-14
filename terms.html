@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - CrossPost Bot</title>
-    <link rel="icon" type="image/png" href="image.jpg">
+    <title>Terms of Service - CrossyBot</title>
+    <link rel="icon" type="image/jpeg" href="image.jpg">
     <style>
         :root {
             --bg-color: #0f172a;
@@ -51,6 +51,9 @@
             font-size: 1.25rem;
             color: var(--text-primary);
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .logo span { color: var(--tiktok-pink); }
@@ -109,6 +112,15 @@
         ul { padding-left: 1.5rem; }
         li { margin-bottom: 0.5rem; }
 
+        a.ext-link {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        a.ext-link:hover {
+            text-decoration: underline;
+        }
+
         footer {
             border-top: 1px solid var(--border-color);
             padding: 2rem 1.5rem;
@@ -133,7 +145,7 @@
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="image.jpg" alt="Logo" style="width: 28px; height: 28px; border-radius: 6px; vertical-align: middle;">
+                <img src="image.jpg" alt="Logo" style="width: 28px; height: 28px; border-radius: 6px;">
                 Crossy<span>Bot</span>
             </a>
             <nav>
@@ -147,38 +159,41 @@
     <main>
         <div class="doc-card">
             <h1>Terms of Service</h1>
-            <div class="updated-date">Last updated: October 19, 2026</div>
+            <div class="updated-date">Last updated: November 14, 2026</div>
 
             <h2>1. Acceptance of Terms</h2>
-            <p>By connecting your TikTok account to <strong>CrossPost Bot</strong>, you agree to comply with and be bound by these Terms of Service.</p>
+            <p>By connecting your social media accounts (including TikTok, YouTube, Instagram, and other supported platforms) to <strong>CrossyBot</strong>, you agree to comply with and be bound by these Terms of Service.</p>
 
             <h2>2. Description of Service</h2>
-            <p>CrossPost Bot provides automated media management tools enabling authorized users to post video files directly to their TikTok accounts via official TikTok APIs.</p>
+            <p>CrossyBot provides automated cross-platform media management and publishing tools enabling authorized users to upload and distribute video content from Telegram directly to their connected social media profiles via official platform APIs.</p>
 
             <h2>3. User Responsibilities & Content Ownership</h2>
-            <p>Users maintain full ownership and liability for all media uploaded through the service:</p>
+            <p>Users maintain full ownership and legal responsibility for all media uploaded through the service:</p>
             <ul>
-                <li>You confirm that you own or possess necessary rights and licenses for all published media.</li>
-                <li>You agree not to upload content that infringes copyrights, trademarks, or third-party intellectual property.</li>
-                <li>All uploaded videos must strictly comply with <a href="https://www.tiktok.com/community-guidelines" style="color: #60a5fa;" target="_blank">TikTok Community Guidelines</a>.</li>
+                <li>You confirm that you own or hold all necessary rights, licenses, and permissions for any content you publish.</li>
+                <li>You agree not to distribute material that infringes copyrights, trademarks, or third-party intellectual property rights.</li>
+                <li>All uploaded media must strictly comply with the terms and community guidelines of each destination platform, including <a href="https://www.tiktok.com/community-guidelines" class="ext-link" target="_blank">TikTok Community Guidelines</a>, <a href="https://www.youtube.com/t/terms" class="ext-link" target="_blank">YouTube Terms of Service</a>, and <a href="https://help.instagram.com/477434105621119" class="ext-link" target="_blank">Instagram Community Guidelines</a>.</li>
             </ul>
 
-            <h2>4. Prohibited Uses</h2>
+            <h2>4. Third-Party Platform Integrations</h2>
+            <p>CrossyBot operates using official third-party APIs (such as TikTok Content Posting API, YouTube Data API, and Instagram Graph API). Your use of these integrations is also governed by the respective terms and privacy policies of those platforms.</p>
+
+            <h2>5. Prohibited Uses</h2>
             <p>You agree not to use the application to:</p>
             <ul>
-                <li>Distribute illegal, abusive, harmful, or fraudulent media.</li>
-                <li>Engage in automated spamming or unauthorized bulk uploading.</li>
-                <li>Attempt to reverse-engineer API parameters or violate TikTok API Terms of Use.</li>
+                <li>Distribute illegal, abusive, harmful, deceptive, or fraudulent content.</li>
+                <li>Engage in automated spamming, artificial engagement, or unauthorized bulk uploading.</li>
+                <li>Attempt to bypass rate limits, reverse-engineer API parameters, or violate third-party developer policies.</li>
             </ul>
 
-            <h2>5. Disclaimer & Limitation of Liability</h2>
-            <p>The application is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. We are not liable for account suspensions, posting delays, or technical errors resulting from third-party API availability.</p>
+            <h2>6. Disclaimer & Limitation of Liability</h2>
+            <p>The application is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. We are not liable for account suspensions, content removals, publishing delays, or technical errors resulting from third-party API changes or downtime.</p>
 
-            <h2>6. Termination of Access</h2>
-            <p>We reserve the right to revoke application access to any user violating these terms without prior notice.</p>
+            <h2>7. Termination of Access</h2>
+            <p>We reserve the right to restrict or revoke access to CrossyBot for any user violating these terms without prior notice. Users may also revoke application permissions at any time through their respective social media account security settings.</p>
 
-            <h2>7. Contact</h2>
-            <p>For questions or terms clarifications, please reach out via the official GitHub repository issue tracker.</p>
+            <h2>8. Contact</h2>
+            <p>For questions, support, or terms clarifications, please open an issue in the official GitHub project repository.</p>
         </div>
     </main>
 
@@ -188,7 +203,7 @@
             <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
         </div>
-        <p>&copy; 2026 CrossPost Bot. All rights reserved.</p>
+        <p>&copy; 2026 CrossyBot. All rights reserved.</p>
     </footer>
 
 </body>
